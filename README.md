@@ -2,7 +2,7 @@
 
 ### [Site link](https://ViolaceousCat.github.io/)
 
-Layout supports mobile (up-to-320) and desktop (up-to-1399) versions
+Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 
 ### The tech stack is:
 
