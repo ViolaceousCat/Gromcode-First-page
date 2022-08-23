@@ -1,0 +1,145 @@
+.communication {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px;
+
+  &_primary {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #0000001a;
+
+    &_column {
+      .communication_subtitle {
+        margin: 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+        color: #0189d1;
+
+        @include for-large-screen {
+          margin-top: 13px;
+        }
+      }
+
+      .communication_title {
+        margin: 0;
+        margin-top: 17px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+
+        @include for-large-screen {
+          margin-top: 24px;
+          font-size: 56px;
+          line-height: 56px;
+          letter-spacing: -0.5px;
+        }
+      }
+
+      .communication_description {
+        margin: 0;
+        margin-top: 18px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 34px;
+
+        @include for-large-screen {
+          margin-top: 30px;
+          margin-bottom: 39px;
+        }
+      }
+
+      @include for-large-screen {
+        margin-right: 193px;
+      }
+    }
+
+    &_poster {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      &_img {
+        max-width: 100%;
+
+        @include for-large-screen {
+          max-width: none;
+        }
+      }
+
+      &_description {
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 0.6;
+        margin: 0;
+        margin-top: 17px;
+
+        @include for-large-screen {
+          margin-top: 15px;
+        }
+      }
+
+      @include for-large-screen {
+        margin: 0;
+        margin-bottom: 26px;
+        margin-right: 63px;
+      }
+    }
+
+    @include for-large-screen {
+      flex-direction: row;
+      margin-top: 110px;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+
+    &_links {
+      margin-top: 32px;
+
+      &:first-child {
+        margin-top: 0;
+
+        @include for-large-screen {
+          margin-right: 0;
+        }
+      }
+
+      &_text {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0;
+        margin-bottom: 11px;
+      }
+
+      &_link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #3040c4;
+      }
+
+      @include for-large-screen {
+        margin-top: 0;
+        margin-right: 30px;
+        flex: 1;
+      }
+    }
+
+    @include for-large-screen {
+      flex-direction: row;
+      margin-top: 41px;
+      margin-bottom: 110px;
+    }
+  }
+
+  @include for-large-screen {
+    width: 1144px;
+    padding: 0;
+    margin: auto;
+  }
+}

@@ -1,0 +1,32 @@
+.customers_mobile {
+  display: flex;
+  flex-direction: column;
+
+  .customers_row {
+    display: flex;
+
+    .customers_item {
+      height: 94px;
+      width: 107px;
+      border-bottom: 1px solid #e3e3e3;
+      border-right: 1px solid #e3e3e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .customers_logo {
+        filter: brightness(0);
+        max-width: 80%;
+      }
+    }
+  }
+
+  @include for-large-screen {
+    display: none;
+  }
+}

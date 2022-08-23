@@ -1,0 +1,17 @@
+.customers {
+  width: 1140px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_logo {
+    filter: brightness(0);
+  }
+
+  @include for-small-screen {
+    display: none;
+  }
+}
