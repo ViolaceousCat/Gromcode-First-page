@@ -1535,7 +1535,6 @@
   text-align: center;
   font-size: 18px;
   line-height: 13px;
-  width: 385px;
 }
 @media screen and (max-width: 1399px) {
   .order_details_form_email {
