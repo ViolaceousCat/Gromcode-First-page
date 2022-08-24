@@ -7,6 +7,11 @@
   justify-content: space-between;
   align-items: center;
 
+  &_alternate {
+    padding-top: 43px;
+    padding-bottom: 76px;
+  }
+
   &_logo {
     filter: brightness(0);
   }
