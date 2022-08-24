@@ -1,6 +1,6 @@
 # Layout Sample Project
 
-### [Site link](https://ViolaceousCat.github.io/)
+### [Site link](https://violaceouscat.github.io/Responsive-layout-Foundation/)
 
 Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 
