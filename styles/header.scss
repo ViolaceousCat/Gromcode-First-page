@@ -1,4 +1,4 @@
-.header-background {
+.header_background {
   background-color: #f3c6bd;
 
   .header {
@@ -21,7 +21,7 @@
         }
       }
 
-      &-text {
+      &_text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -122,7 +122,7 @@
   }
 }
 
-.logo-text_name {
+.logo_text_name {
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
