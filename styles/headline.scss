@@ -5,13 +5,13 @@
     margin: 35px 15px 33px 15px;
 
     .headline_title {
+      margin: 0;
       font-weight: 700;
       font-size: 50px;
       line-height: 50px;
       letter-spacing: -0.3125px;
 
       @include for-large-screen {
-        margin: 0;
         width: 754px;
         height: 165px;
         font-size: 80px;

@@ -818,6 +818,8 @@
 }
 .header_background .header .logo_image {
   margin-right: 15px;
+  width: 48px;
+  height: 48px;
 }
 @media screen and (min-width: 1400px) {
   .header_background .header .logo_image {
@@ -870,6 +872,7 @@
 @media screen and (min-width: 1400px) {
   .header_background .header .navigation {
     display: flex;
+    justify-content: space-between;
     margin-left: auto;
     margin-top: 7px;
     margin-right: 56px;
@@ -934,6 +937,7 @@
   margin: 35px 15px 33px 15px;
 }
 .headline_content .headline_title {
+  margin: 0;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
@@ -941,7 +945,6 @@
 }
 @media screen and (min-width: 1400px) {
   .headline_content .headline_title {
-    margin: 0;
     width: 754px;
     height: 165px;
     font-size: 80px;

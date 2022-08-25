@@ -14,6 +14,8 @@
       align-items: center;
       &_image {
         margin-right: 15px;
+        width: 48px;
+        height: 48px;
 
         @include for-large-screen {
           width: 60px;
@@ -70,6 +72,7 @@
 
       @include for-large-screen {
         display: flex;
+        justify-content: space-between;
         margin-left: auto;
         margin-top: 7px;
         margin-right: 56px;
