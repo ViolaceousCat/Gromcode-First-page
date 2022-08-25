@@ -852,13 +852,11 @@
   text-decoration: none;
   line-height: 25px;
   font-size: 18px;
-  margin-right: 34px;
 }
 .header_background .header .navigation_item_selected {
   font-weight: 700;
 }
 .header_background .header .navigation_item:last-child {
-  margin-right: 0;
   display: flex;
 }
 .header_background .header .navigation_item:last-child .navigation_arrow {
@@ -873,7 +871,7 @@
   .header_background .header .navigation {
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
+    margin-left: 335px;
     margin-top: 7px;
     margin-right: 56px;
     height: 25px;
