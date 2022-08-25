@@ -871,11 +871,11 @@
   .header_background .header .navigation {
     display: flex;
     justify-content: space-between;
-    margin-left: 335px;
+    margin-left: auto;
     margin-top: 7px;
     margin-right: 56px;
     height: 25px;
-    width: 273px;
+    width: 289px;
   }
 }
 .header_background .header .header_button {
