@@ -1,59 +1,102 @@
 .inbox {
-  width: 1400px;
   display: flex;
-  height: 790px;
+  flex-direction: column;
   background-color: #fcf0e366;
-  position: relative;
+
+  @include for-large-screen {
+    width: 1400px;
+    flex-direction: row;
+    height: 790px;
+    position: relative;
+  }
 
   &_poster {
-    margin-left: 193px;
-    margin-top: 142px;
-    margin-bottom: 101px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px 15px 0 15px;
 
-    .inbox_poster_description {
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 22px;
-      opacity: 0.6;
+    @include for-large-screen {
+      display: block;
+      margin: 0;
+      margin-left: 193px;
+      margin-top: 142px;
+      margin-bottom: 101px;
+      text-align: center;
+    }
+
+    &_image {
+      max-width: 100%;
+    }
+
+    &_description {
+      display: none;
+
+      @include for-large-screen {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 0.6;
+      }
     }
   }
 
   &_column {
-    &_main {
-      width: 462px;
-      margin-left: 192px;
+    margin: 32px 15px 48px 15px;
 
-      .inbox_subtitle {
-        margin-top: 115px;
-        margin-bottom: 0;
+    @include for-large-screen {
+      margin: 0;
+    }
+
+    &_main {
+      @include for-large-screen {
+        width: 462px;
+        margin-left: 192px;
+      }
+
+      &_subtitle {
+        margin: 0;
         font-weight: 700;
         font-size: 22px;
         line-height: 34px;
         color: #f1592b;
+
+        @include for-large-screen {
+          margin-top: 115px;
+          margin-bottom: 0;
+        }
       }
 
-      .inbox_title {
-        margin-top: 24px;
-        margin-bottom: 0;
+      &_title {
+        margin: 0;
+        margin-top: 17px;
         font-weight: 700;
-        font-size: 56px;
-        line-height: 56px;
-        letter-spacing: -0.5px;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+
+        @include for-large-screen {
+          margin-top: 24px;
+          font-size: 56px;
+          line-height: 56px;
+          letter-spacing: -0.5px;
+        }
       }
 
-      .inbox_description {
-        margin-top: 30px;
-        margin-bottom: 0;
+      &_description {
+        margin: 0;
+        margin-top: 18px;
         font-size: 24px;
         line-height: 34px;
+
+        @include for-large-screen {
+          margin-top: 30px;
+        }
       }
     }
 
     &_opinion {
-      width: 519px;
-      margin-top: 44px;
-      margin-left: 164px;
+      margin-top: 30px;
       padding-top: 30px;
       background: linear-gradient(
           180deg,
@@ -66,17 +109,34 @@
         0px 4px 6px rgba(0, 0, 0, 0.05),
         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 
+      @include for-large-screen {
+        width: 519px;
+        margin-top: 44px;
+        margin-left: 164px;
+      }
+
       .inbox_quotation {
+        margin: 0;
+        margin: 0 20px;
         font-size: 20px;
         line-height: 28px;
-        margin: 0 30px 26px 30px;
+
+        @include for-large-screen {
+          margin: 0 30px 26px 30px;
+        }
       }
 
       .inbox_opinion_user {
         display: flex;
         align-items: center;
-        margin-left: 29px;
-        margin-bottom: 26px;
+        margin: 0;
+        margin: 26px 20px 28px 20px;
+
+        @include for-large-screen {
+          margin: 0;
+          margin-left: 29px;
+          margin-bottom: 26px;
+        }
 
         .inbox_user-info {
           margin-left: 11px;
@@ -85,7 +145,7 @@
 
       .inbox_opinion_line {
         height: 4px;
-
+        width: 100%;
         margin: 0;
         padding: 0;
         background: linear-gradient(
@@ -97,10 +157,6 @@
         background-blend-mode: overlay, normal;
       }
     }
-  }
-
-  @include for-small-screen {
-    display: none;
   }
 }
 
@@ -114,4 +170,12 @@
   font-size: 16px;
   line-height: 22px;
   opacity: 0.6;
+}
+
+@include for-small-screen {
+  .inbox_user_image {
+    min-width: 40px;
+    min-height: 40px;
+    margin-bottom: auto;
+  }
 }
