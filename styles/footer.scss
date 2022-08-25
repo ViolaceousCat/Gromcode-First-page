@@ -27,7 +27,7 @@
           }
         }
 
-        .logo-text {
+        .logo_text {
           .footer_logo_description {
             font-size: 18px;
             line-height: 25px;
@@ -140,7 +140,7 @@
     }
   }
 
-  &-links {
+  &_links {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
@@ -168,7 +168,7 @@
       }
     }
 
-    .social-links {
+    .social_links {
       &_item {
         margin-right: 20px;
 

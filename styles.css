@@ -643,7 +643,7 @@
     margin-right: 9.5px;
   }
 }
-.footer-navigation .about-company .footer_logo .logo-text .footer_logo_description {
+.footer-navigation .about-company .footer_logo .logo_text .footer_logo_description {
   font-size: 18px;
   line-height: 25px;
   color: #2b292d;
@@ -747,45 +747,45 @@
     flex-direction: row;
   }
 }
-.footer-links {
+.footer_links {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 23px;
 }
-.footer-links .terms {
+.footer_links .terms {
   width: 180px;
   line-height: 22px;
   font-size: 14px;
   margin-bottom: 30px;
 }
-.footer-links .terms_items {
+.footer_links .terms_items {
   color: rgba(43, 41, 45, 0.6);
   text-decoration: none;
   margin-right: 14px;
 }
-.footer-links .terms_items:last-child {
+.footer_links .terms_items:last-child {
   margin-right: 0;
 }
 @media screen and (min-width: 1400px) {
-  .footer-links .terms {
+  .footer_links .terms {
     line-height: 50px;
     margin-bottom: 0;
   }
 }
-.footer-links .social-links_item {
+.footer_links .social_links_item {
   margin-right: 20px;
 }
-.footer-links .social-links_item:last-child {
+.footer_links .social_links_item:last-child {
   margin-right: 0;
 }
 @media screen and (min-width: 1400px) {
-  .footer-links .social-links {
+  .footer_links .social_links {
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1400px) {
-  .footer-links {
+  .footer_links {
     width: 1140px;
     height: 50px;
     margin: 0 auto;
