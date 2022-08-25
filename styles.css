@@ -1160,6 +1160,9 @@
     width: auto;
   }
 }
+.hiring_vacancy_block .hiring_vacancy_svg-image .hiring_vacancy_block_arrow_hover {
+  display: none;
+}
 @media screen and (max-width: 1399px) {
   .hiring_vacancy_block {
     justify-content: space-between;
@@ -1217,7 +1220,10 @@
     opacity: 1;
   }
   .hiring_vacancy_block:hover .hiring_vacancy_block_arrow {
-    fill: #fff;
+    display: none;
+  }
+  .hiring_vacancy_block:hover .hiring_vacancy_block_arrow_hover {
+    display: block;
   }
 }
 .inbox {
